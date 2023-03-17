@@ -2,7 +2,7 @@
 
 Official code for generating the *Multimodal3DIdent* dataset introduced in the
 paper [Identifiability Results for Multimodal Contrastive
-Learning](https://openreview.net/forum?id=U_2kuqoTcB) presented at [ICLR
+Learning](http://arxiv.org/abs/2303.09166) presented at [ICLR
 2023](https://iclr.cc/Conferences/2023). The dataset provides an identifiability
 benchmark with image/text pairs generated from controllable ground truth
 factors, some of which are shared between image and text modalities, as
