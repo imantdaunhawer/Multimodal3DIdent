@@ -51,7 +51,7 @@ specified set of values for the respective factor.
 | Image    | Object beta-rotation  | [0, 1]-interval      | Linearly transformed to [-pi/2, pi/2] for Blender
 | Image    | Object gamma-rotation | [0, 1]-interval      | Linearly transformed to [-pi/2, pi/2] for Blender
 | Image    | Object color          | [0, 1]-interval      | Hue value in HSV transformed to RGB for Blender
-| Image    | Spotlight position    | [0, 1]-interval      | Transformed to a unique position on a circle
+| Image    | Spotlight position    | [0, 1]-interval      | Transformed to a unique position on a semicircle
 | Image    | Spotlight color       | [0, 1]-interval      | Hue value in HSV transformed to RGB for Blender
 | Image    | Background color      | [0, 1]-interval      | Hue value in HSV transformed to RGB for Blender
 | Text     | Object shape          | {0, 1, ..., 6}       | Mapped to strings like "teapot", "hare", etc.
@@ -66,7 +66,7 @@ We use the Blender rendering engine to create visually complex images
 depicting a 3D scene. Each image in the dataset shows a colored 3D object of a
 certain shape or class (i.e., teapot, hare, cow, armadillo, dragon, horse, or
 head) in front of a colored background and illuminated by a colored spotlight
-that is focused on the object and located on a circle above the scene. The
+that is focused on the object and located on a semicircle above the scene. The
 resulting RGB images are of size 224 x 224 x 3.
 
 ### Text generation

@@ -13,7 +13,7 @@ them for the input to Blender as follows.
 | object beta-rotation         | [0, 1]         | [-pi/2, pi/2]                   | linear          |
 | object gamma-rotation        | [0, 1]         | [-pi/2, pi/2]                   | linear          |
 | object color (hue value)     | [0, 1]         | (R, G, B)                       | HSV to RGB      |
-| spotlight position           | [0, 1]         | (x, y, z=12), (x, y) in [-4, 4] | sine and cosine |
+| spotlight position           | [0, 1]         | (x, y) in [-4, 4]               | sine and cosine |
 | spotlight color (hue value)  | [0, 1]         | (R, G, B)                       | HSV to RGB      |
 | background color (hue value) | [0, 1]         | (R, G, B)                       | HSV to RGB      |
 
@@ -22,7 +22,7 @@ More precisely, colors and spotlight position are computed as follows:
   hsv_to_rgb(x) with x in [0, 1], whereas for spotlight and background colors,
   we use hsv_to_rgb(x) with x in [-1/4, 1/4].
 
-- Spotlight position (theta) is transformed to coordinates (x, y, z=12), where
+- Spotlight position (theta) is transformed to coordinates (x, y) on a semicircle, where
   - x = 4 * sin(theta'), theta' in [-pi/2, pi/2], and
   - y = 4 * cos(theta'), theta' in [-pi/2, pi/2].
 
